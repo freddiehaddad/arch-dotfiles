@@ -1,0 +1,47 @@
+    OpenRGB v0.71
+    Commit: 4d4c18f1efa0c1b89dfa991278baccf6a72de77c from 2022-10-27 16:25:24 +0000
+    Launched: 20221030_204121
+====================================================================================================
+
+0     |Info:    Found file: OpenRGB Default.orp attempting to validate header
+0     |Info:    Valid v3 profile found for OpenRGB Default
+14    |Info:    ------------------------------------------------------
+14    |Info:    |               Start device detection               |
+14    |Info:    ------------------------------------------------------
+14    |Info:    Initializing HID interfaces: Success
+16    |Info:    ------------------------------------------------------
+16    |Info:    |             Detecting I2C interfaces               |
+16    |Info:    ------------------------------------------------------
+16    |Info:    Registering I2C interface: /dev/i2c-3 Device 8086:4680 Subsystem: 1462:7D30
+16    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+16    |Info:    Registering I2C interface: /dev/i2c-10 Device 0000:0000 Subsystem: 0000:0000
+16    |Info:    Registering I2C interface: /dev/i2c-1 Device 8086:4680 Subsystem: 1462:7D30
+16    |Info:    Registering I2C interface: /dev/i2c-8 Device 8086:4680 Subsystem: 1462:7D30
+16    |Info:    Registering I2C interface: /dev/i2c-6 Device 8086:4680 Subsystem: 1462:7D30
+16    |Info:    Registering I2C interface: /dev/i2c-4 Device 8086:4680 Subsystem: 1462:7D30
+16    |Info:    Registering I2C interface: /dev/i2c-11 Device 8086:7AA3 Subsystem: 1462:7D30
+16    |Info:    Registering I2C interface: /dev/i2c-2 Device 8086:4680 Subsystem: 1462:7D30
+16    |Info:    Registering I2C interface: /dev/i2c-0 Device 8086:4680 Subsystem: 1462:7D30
+16    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+16    |Info:    Registering I2C interface: /dev/i2c-9 Device 0000:0000 Subsystem: 0000:0000
+16    |Info:    Registering I2C interface: /dev/i2c-7 Device 8086:4680 Subsystem: 1462:7D30
+16    |Info:    Registering I2C interface: /dev/i2c-5 Device 8086:4680 Subsystem: 1462:7D30
+16    |Info:    ------------------------------------------------------
+16    |Info:    |               Detecting I2C devices                |
+16    |Info:    ------------------------------------------------------
+180   |Info:    [PluginManager] Scanning plugin directory: /home/freddiehaddad/.config/OpenRGB/plugins
+508   |Info:    ------------------------------------------------------
+508   |Info:    |               Detecting I2C PCI devices            |
+508   |Info:    ------------------------------------------------------
+508   |Info:    ------------------------------------------------------
+508   |Info:    |               Detecting HID devices                |
+508   |Info:    ------------------------------------------------------
+511   |Info:    [Logitech G Pro RGB Mechanical Gaming Keyboard] Registering RGB controller
+585   |Info:    [MSI MPG Z690 CARBON WIFI (MS-7D30)] Registering RGB controller
+975   |Info:    [G502 HERO Gaming Mouse] Registering RGB controller
+975   |Info:    ------------------------------------------------------
+975   |Info:    |              Detecting other devices               |
+975   |Info:    ------------------------------------------------------
+984   |Info:    ------------------------------------------------------
+984   |Info:    |                Detection completed                 |
+984   |Info:    ------------------------------------------------------
