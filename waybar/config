@@ -30,7 +30,7 @@
     },
 
     "clock": {
-	    "format": "{:%a, %b%e, %H:%I}",
+	    "format": "{:%a %b%e %H:%M}",
     },
 
     "tray": {
