@@ -31,6 +31,7 @@ set $screenshot grim $HOME/pictures/screenshots/scrn-$(date +"%Y-%m-%d-%H-%M-%S"
 exec waybar
 exec $HOME/.local/bin/OpenRGB-x86_64.AppImage --startminimized --noautoconnect
 exec 1password --silent
+for_window [class="1Password"] floating enable
 
 bindsym Print exec $screenshot
 
