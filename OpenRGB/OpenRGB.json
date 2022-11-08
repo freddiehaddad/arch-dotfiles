@@ -5,11 +5,11 @@
         "enabled": true,
         "host": "0.0.0.0",
         "port": "6742",
-        "profile": "OpenRGB Default",
+        "profile": "Solid Blue",
         "setclient": false,
         "setcustom": false,
         "setminimized": true,
-        "setprofile": false,
+        "setprofile": true,
         "setserver": false,
         "setserverhost": false,
         "setserverport": false
@@ -1023,10 +1023,10 @@
         ]
     },
     "UserInterface": {
-        "RunZoneChecks": true,
+        "RunZoneChecks": false,
         "exit_profile": {
-            "profile_name": "",
-            "set_on_exit": false
+            "profile_name": "Solid",
+            "set_on_exit": true
         },
         "geometry": {
             "height": 0,
