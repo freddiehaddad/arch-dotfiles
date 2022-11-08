@@ -2,14 +2,14 @@
     "AutoStart": {
         "client": "localhost:6742",
         "custom": "",
-        "enabled": true,
+        "enabled": false,
         "host": "0.0.0.0",
         "port": "6742",
-        "profile": "Solid Blue",
+        "profile": "",
         "setclient": false,
         "setcustom": false,
-        "setminimized": true,
-        "setprofile": true,
+        "setminimized": false,
+        "setprofile": false,
         "setserver": false,
         "setserverhost": false,
         "setserverport": false
@@ -39,6 +39,7 @@
             "ASUS ROG Balteus": true,
             "ASUS ROG Balteus Qi": true,
             "ASUS ROG Chakram (Wireless)": true,
+            "ASUS ROG Claymore": true,
             "ASUS ROG Falchion (Wired)": true,
             "ASUS ROG Falchion (Wireless)": true,
             "ASUS ROG GTX 1660 Ti OC 6G": true,
@@ -112,6 +113,7 @@
             "ASUS ROG Strix Flare": true,
             "ASUS ROG Strix Flare PNK LTD": true,
             "ASUS ROG Strix GTX 1050 O2G Gaming": true,
+            "ASUS ROG Strix GTX 1050 TI 4G Gaming": true,
             "ASUS ROG Strix GTX 1050 TI O4G Gaming": true,
             "ASUS ROG Strix GTX 1650S OC 4G": true,
             "ASUS ROG Strix GTX 1660S O6G Gaming": true,
@@ -135,6 +137,7 @@
             "ASUS ROG Strix Scope": true,
             "ASUS ROG Strix Scope RX": true,
             "ASUS ROG Strix Scope TKL": true,
+            "ASUS ROG Strix Scope TKL PNK LTD": true,
             "ASUS ROG Strix XG27AQ": true,
             "ASUS ROG Strix XG27W": true,
             "ASUS ROG Throne": true,
@@ -166,6 +169,7 @@
             "ASUS TUF RTX 3080Ti O12G GAMING": true,
             "ASUS TUF RTX 3090 O24G": true,
             "ASUS TUF RTX 3090 O24G OC": true,
+            "ASUS TUF RTX 4090 O24G": true,
             "ASUS TUF RTX 4090 O24G OC": true,
             "ASUS TUF RX 6800XT O16G GAMING": true,
             "ASUS TUF RX 6900XT O16G GAMING": true,
@@ -488,6 +492,7 @@
             "HyperX Pulsefire Mat": true,
             "HyperX Pulsefire Raid": true,
             "HyperX Pulsefire Surge": true,
+            "Intel Arc A770 Limited Edition": true,
             "KFA2 RTX 2070 EX": true,
             "KFA2 RTX 2080 EX OC": true,
             "KFA2 RTX 2080 Super EX OC": true,
@@ -577,6 +582,7 @@
             "MSI GeForce RTX 2080 Super Gaming X Trio": true,
             "MSI GeForce RTX 2080Ti 11G Gaming X Trio": true,
             "MSI GeForce RTX 2080Ti Gaming X Trio": true,
+            "MSI GeForce RTX 2080Ti Gaming Z Trio": true,
             "MSI GeForce RTX 2080Ti Sea Hawk EK X": true,
             "MSI GeForce RTX 3060 12G Gaming X Trio LHR": true,
             "MSI GeForce RTX 3060 12GB Gaming X Trio": true,
@@ -692,6 +698,7 @@
             "Np93 ALPHA - Gaming Mouse": true,
             "Nvidia ESA - Dell XPS 730x": true,
             "OpenRazer": false,
+            "PNY XLR8 OC EDITION RTX 2060": true,
             "PNY XLR8 Revel EPIC-X RTX 3080": true,
             "PNY XLR8 Revel EPIC-X RTX 3090": true,
             "Palit 3060": true,
@@ -836,6 +843,7 @@
             "Razer Orbweaver Chroma": true,
             "Razer Ornata Chroma": true,
             "Razer Ornata Chroma V2": true,
+            "Razer Ornata V3": true,
             "Razer Seiren Emote": true,
             "Razer Strider Chroma": true,
             "Razer Tartarus Chroma": true,
@@ -847,6 +855,7 @@
             "Razer Viper Mini": true,
             "Razer Viper Ultimate (Wired)": true,
             "Razer Viper Ultimate (Wireless)": true,
+            "Red Square Keyrox TKL": true,
             "Redragon M602 Griffin": true,
             "Redragon M711 Cobra": true,
             "Redragon M715 Dagger": true,
@@ -893,6 +902,7 @@
             "SteelSeries QCK Prism Cloth 4XL": true,
             "SteelSeries QCK Prism Cloth Medium": true,
             "SteelSeries QCK Prism Cloth XL": true,
+            "SteelSeries QCK Prism Cloth XL CS:GO Neon Rider Ed.": true,
             "SteelSeries QCK Prism Cloth XL Destiny Ed.": true,
             "SteelSeries Rival 100": true,
             "SteelSeries Rival 100 DotA 2 Edition": true,
@@ -987,7 +997,9 @@
             "ZET GAMING Edge Air Elit (Wireless)": true,
             "ZET GAMING Edge Air Pro": true,
             "ZET GAMING Edge Air Pro (Wireless)": true,
-            "Zalman Z Sync": true
+            "Zalman Z Sync": true,
+            "iGame GeForce RTX 3060 Ultra W OC 12G L-V": true,
+            "iGame GeForce RTX 3070 Advanced OC-V": true
         }
     },
     "Gigabyte RGB Fusion 2 SMBus": {
@@ -1025,8 +1037,8 @@
     "UserInterface": {
         "RunZoneChecks": false,
         "exit_profile": {
-            "profile_name": "Solid",
-            "set_on_exit": true
+            "profile_name": "",
+            "set_on_exit": false
         },
         "geometry": {
             "height": 0,
