@@ -32,7 +32,7 @@ exec waybar
 exec $HOME/.local/bin/OpenRGB-x86_64.AppImage --startminimized --noautoconnect
 exec 1password --silent
 for_window [class="1Password"] floating enable
-#for_window [title="OpenRGB"] floating enable
+for_window [title="OpenRGB"] floating enable
 
 bindsym Print exec $screenshot
 
@@ -69,7 +69,7 @@ output * bg $HOME/pictures/wallpapers/wallpaper.jpg fill
 #
 # Example configuration:
 #
-exec swayidle -w timeout 600 $lock
+exec swayidle -w timeout 900 $lock
 
 ### Lockscreen configuration
 #
