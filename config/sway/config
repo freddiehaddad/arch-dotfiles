@@ -56,7 +56,7 @@ client.urgent           $base0840 $base08   $base00   $base0D7F   $base08
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg $HOME/pictures/wallpapers/wallpaper.jpg fill
+output * bg $HOME/.config/sway/wallpapers/wallpaper.jpg fill
 #
 # Example configuration:
 #

@@ -1,6 +1,0 @@
-2022/11/11-09:05:13.325 312d Creating DB /home/freddiehaddad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.odwebp.svc.ms_0.indexeddb.leveldb since it was missing.
-2022/11/11-09:05:13.343 312d Reusing MANIFEST /home/freddiehaddad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.odwebp.svc.ms_0.indexeddb.leveldb/MANIFEST-000001
-2022/11/11-09:05:24.080 312d Level-0 table #5: started
-2022/11/11-09:05:24.087 312d Level-0 table #5: 3369 bytes OK
-2022/11/11-09:05:24.100 312d Delete type=0 #3
-2022/11/11-09:05:24.100 312d Manual compaction at level-0 from (begin) .. (end); will stop at (end)

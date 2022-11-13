@@ -1,6 +1,0 @@
-2022/11/02-17:51:11.785 6319 Creating DB /home/freddiehaddad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.wepc.com_0.indexeddb.leveldb since it was missing.
-2022/11/02-17:51:11.802 6319 Reusing MANIFEST /home/freddiehaddad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.wepc.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/11/02-17:51:19.440 6319 Level-0 table #5: started
-2022/11/02-17:51:19.447 6319 Level-0 table #5: 1296 bytes OK
-2022/11/02-17:51:19.459 6319 Delete type=0 #3
-2022/11/02-17:51:19.460 6319 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

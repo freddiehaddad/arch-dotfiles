@@ -1,7 +1,0 @@
-2022/11/11-05:50:34.809 c4f Reusing MANIFEST /home/freddiehaddad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_lpcdn.chat.online.citi.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/11/11-05:50:34.809 c4f Recovering log #3
-2022/11/11-05:50:34.809 c4f Reusing old log /home/freddiehaddad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_lpcdn.chat.online.citi.com_0.indexeddb.leveldb/000003.log 
-2022/11/11-05:51:35.895 a23 Level-0 table #5: started
-2022/11/11-05:51:35.902 a23 Level-0 table #5: 3359 bytes OK
-2022/11/11-05:51:35.914 a23 Delete type=0 #3
-2022/11/11-05:51:35.915 a23 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,6 +1,0 @@
-2022/11/01-10:41:21.123 3ec5 Creating DB /home/freddiehaddad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.twitch.tv_0.indexeddb.leveldb since it was missing.
-2022/11/01-10:41:21.140 3ec5 Reusing MANIFEST /home/freddiehaddad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.twitch.tv_0.indexeddb.leveldb/MANIFEST-000001
-2022/11/01-10:41:53.188 3ec5 Level-0 table #5: started
-2022/11/01-10:41:53.194 3ec5 Level-0 table #5: 1072 bytes OK
-2022/11/01-10:41:53.206 3ec5 Delete type=0 #3
-2022/11/01-10:41:53.206 3ec5 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
