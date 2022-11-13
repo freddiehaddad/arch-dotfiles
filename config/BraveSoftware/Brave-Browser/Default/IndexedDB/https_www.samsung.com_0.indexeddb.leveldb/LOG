@@ -1,0 +1,6 @@
+2022/11/10-16:37:59.202 8b4e Creating DB /home/freddiehaddad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.samsung.com_0.indexeddb.leveldb since it was missing.
+2022/11/10-16:37:59.220 8b4e Reusing MANIFEST /home/freddiehaddad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.samsung.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/11/10-16:38:07.470 8c66 Level-0 table #5: started
+2022/11/10-16:38:07.477 8c66 Level-0 table #5: 1039 bytes OK
+2022/11/10-16:38:07.489 8c66 Delete type=0 #3
+2022/11/10-16:38:07.489 8c66 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

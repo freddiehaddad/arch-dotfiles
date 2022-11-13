@@ -1,0 +1,6 @@
+2022/11/01-07:19:35.239 2339 Creating DB /home/freddiehaddad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.costco.com_0.indexeddb.leveldb since it was missing.
+2022/11/01-07:19:35.256 2339 Reusing MANIFEST /home/freddiehaddad/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.costco.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/11/01-08:41:30.095 2a99 Level-0 table #5: started
+2022/11/01-08:41:30.106 2a99 Level-0 table #5: 10036 bytes OK
+2022/11/01-08:41:30.124 2a99 Delete type=0 #3
+2022/11/01-08:41:30.124 2a99 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

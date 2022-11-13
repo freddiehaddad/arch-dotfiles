@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "app.double": false,
+  "ui.routes.lastUsedRoute": "{\"type\":\"ItemDetail\",\"content\":{\"itemListRoute\":{\"unlockedRoute\":{\"collectionUuid\":\"VYXXEDNCLRBCROW5BT5PCWTVHM\"},\"itemListType\":{\"type\":\"AllItems\"},\"category\":null,\"sortBehavior\":null},\"itemId\":\"34\"}}",
+  "security.authenticatedUnlock.enabled": true,
+  "appearance.interfaceDensity": "compact",
+  "app.useHardwareAcceleration": true,
+  "security.authenticatedUnlock.requireAccountPasswordAfter": "\"thirty-days\"",
+  "authTags": {
+    "security.authenticatedUnlock.requireAccountPasswordAfter": "LMnsfqQQ8CFiATKq3F1+ff0jW0MArn+tbvSRkHbwXhw",
+    "ui.routes.lastUsedRoute": "vdc4PgZDZwNYb6mkjmSwjOBRf6iIDxcE3g+llVB6XXw"
+  }
+}

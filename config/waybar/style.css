@@ -1,0 +1,59 @@
+@import "scheme.css";
+
+* {
+	font-family: "Iosevka";
+	font-size: 12pt;
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	box-shadow: none;
+	border-radius: 0;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 2px solid @base01;
+}
+
+button:hover {
+	background: @base01;
+}
+
+#waybar {
+	background-color: @base00;
+	border-bottom: 2px solid @base01;
+	color: @base05;
+	opacity: 0.97;
+}
+
+#workspaces button {
+	background-color: @base01;
+	color: @base05;
+}
+
+#workspaces button.focused {
+	background-color: @base0D;
+	color: @base00;
+}
+
+#mode {
+	padding: 0 5px;
+	background-color: @base0A;
+	color: @base00;
+	border-bottom: 2px solid @base01;
+}
+
+#tray {
+	padding: 0 10px;
+}
+
+#clock,
+#temperature,
+#disk,
+#memory,
+#network
+{
+	padding: 0 12px 0 10px;
+	border-right: 2px solid @base01;
+}
