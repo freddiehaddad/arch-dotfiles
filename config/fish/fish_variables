@@ -1,7 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export EDITOR:nvim
-SETUVAR --export FZF_DEFAULT_OPTS:\x20\x2d\x2dcolor\x3dbg\x2b\x3a\x23393f45\x2cbg\x3a\x231c2023\x2cspinner\x3a\x2395aec7\x2chl\x3a\x23ae95c7\x20\x2d\x2dcolor\x3dfg\x3a\x23adb3ba\x2cheader\x3a\x23ae95c7\x2cinfo\x3a\x23aec795\x2cpointer\x3a\x2395aec7\x20\x2d\x2dcolor\x3dmarker\x3a\x2395aec7\x2cfg\x2b\x3a\x23dfe2e5\x2cprompt\x3a\x23aec795\x2chl\x2b\x3a\x23ae95c7
+SETUVAR --export FZF_DEFAULT_OPTS:\x20\x2d\x2dcolor\x3dbg\x2b\x3a\x23202020\x2cbg\x3a\x23151515\x2cspinner\x3a\x2312cfc0\x2chl\x3a\x236fc2ef\x20\x2d\x2dcolor\x3dfg\x3a\x23b0b0b0\x2cheader\x3a\x236fc2ef\x2cinfo\x3a\x23ddb26f\x2cpointer\x3a\x2312cfc0\x20\x2d\x2dcolor\x3dmarker\x3a\x2312cfc0\x2cfg\x2b\x3a\x23e0e0e0\x2cprompt\x3a\x23ddb26f\x2chl\x2b\x3a\x236fc2ef
 SETUVAR --export PYENV_ROOT:/home/freddiehaddad/\x2epyenv
 SETUVAR __fish_initialized:3400
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish

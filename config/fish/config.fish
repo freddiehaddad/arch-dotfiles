@@ -5,7 +5,14 @@ if status is-interactive
     # Base16 Shell
     set BASE16_SHELL "$HOME/.config/base16-shell/"
     source "$BASE16_SHELL/profile_helper.fish"
-    base16-ashes
+    #base16-3024
+    #base16-ashes
+    #base16-atelier-lakeside
+    base16-chalk
+    #base16-harmonic-dark
+    #base16-irblack
+    #base16-oceanicnext
+    #base16-seti
 
     source $HOME/.config/base16-fzf/fish/base16-$BASE16_THEME.fish
 
