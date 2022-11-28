@@ -1,4 +1,6 @@
 *.log
+.git
 config/gh/*
+config/google*
 BraveSoftware
 1Password
