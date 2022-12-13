@@ -32,7 +32,7 @@ exec waybar
 exec $HOME/.local/bin/OpenRGB-x86_64.AppImage --startminimized --noautoconnect
 exec 1password --silent
 for_window [class="1Password"] floating enable
-#for_window [title="OpenRGB"] floating enable
+for_window [title="Library"] floating enable
 
 bindsym Print exec $screenshot
 
@@ -47,7 +47,7 @@ gaps inner 5
 default_border pixel 2
 font pango:Iosevka Term Medium 12
 
-# class                 border    bkgrnd    text      indictr   cborder
+# class                 border    bkgrnd    text      indictr     cborder
 client.focused          $base00   $base00   $base05   $base0D7F   $base0D7F
 client.focused_inactive $base00   $base00   $base04   $base0D7F   $base0D40
 client.unfocused        $base00   $base00   $base04   $base0D7F   $base00BF
