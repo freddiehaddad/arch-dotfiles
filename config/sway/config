@@ -20,8 +20,8 @@ set $term foot
 # Application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 set $menu wofi --insensitive --show drun | xargs swaymsg exec --
-
-set $lock $HOME/.config/sway/scripts/swaylock.sh
+# Requires https://github.com/mortie/swaylock-effects
+set $lock "swaylock --screenshots --effect-blur 10x10 --clock --fade-in 1"
 set $screenshot grim $HOME/pictures/screenshots/scrn-$(date +"%Y-%m-%d-%H-%M-%S").png
 
 ### Autostart section
