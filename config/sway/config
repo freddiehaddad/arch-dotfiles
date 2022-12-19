@@ -69,7 +69,7 @@ output * bg $HOME/.config/sway/wallpapers/wallpaper.jpg fill
 #
 # Example configuration:
 #
-exec swayidle -w timeout 900 $lock
+exec swayidle timeout 900 $lock timeout 1800 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"'
 
 ### Lockscreen configuration
 #
