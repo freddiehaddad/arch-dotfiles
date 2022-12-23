@@ -22,9 +22,9 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
         source "$BASE16_SHELL/profile_helper.sh"
 
 #base16_3024
-#base16_ashes
+base16_ashes
 #base16_atelier-lakeside
-base16_chalk
+#base16_chalk
 #base16_harmonic-dark
 #base16_irblack
 #base16_oceanicnext
@@ -32,6 +32,7 @@ base16_chalk
 
 source $HOME/.config/base16-fzf/bash/base16-$BASE16_THEME.config
 
+ln -sf $HOME/.config/base16-sway/themes/base16-$BASE16_THEME.config $HOME/.config/sway/base16.config
 ln -sf $HOME/.config/base16-waybar/colors/base16-$BASE16_THEME.css $HOME/.config/waybar/scheme.css
 ln -sf $HOME/.config/base16-wofi/themes/base16-$BASE16_THEME.css $HOME/.config/wofi/style.css
 

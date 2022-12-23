@@ -40,8 +40,7 @@ bindsym Shift+Print exec $screenclip
 
 ### Colorscheme configuration
 #
-#set $BASE16_THEME ashes
-include $HOME/.config/base16-sway/themes/base16-$BASE16_THEME.config
+include $HOME/.config/sway/base16.config
 
 ### Window configuration
 #
