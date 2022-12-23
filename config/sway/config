@@ -23,6 +23,7 @@ set $menu wofi --insensitive --show drun | xargs swaymsg exec --
 # Requires https://github.com/mortie/swaylock-effects
 set $lock "swaylock --screenshots --effect-blur 10x10 --clock --fade-in 1"
 set $screenshot grim $HOME/pictures/screenshots/scrn-$(date +"%Y-%m-%d-%H-%M-%S").png
+set $screenclip slurp | grim -g - $HOME/pictures/scren-$(date +"%Y-%m-%d-%H-%M-%S").png
 
 ### Autostart section
 # 
@@ -35,6 +36,7 @@ for_window [class="1Password"] floating enable
 for_window [title="Library"] floating enable
 
 bindsym Print exec $screenshot
+bindsym Shift+Print exec $screenclip
 
 ### Colorscheme configuration
 #
