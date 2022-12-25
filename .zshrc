@@ -1,18 +1,3 @@
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.config/zsh/.histfile
-HISTSIZE=10000
-SAVEHIST=10000
-setopt nomatch
-unsetopt autocd beep extendedglob notify
-bindkey -v
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-zstyle :compinstall filename '/home/freddiehaddad/.zshrc'
-
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
-
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
