@@ -1,0 +1,31 @@
+#!/bin/sh
+#
+# Reference: https://github.com/swaywm/sway/wiki
+# 
+
+#
+# Environment Variables
+#
+
+export XDG_SESSION_DESKTOP=sway
+export XDG_CURRENT_DESKTOP=sway
+
+# Firefox
+export MOZ_ENABLE_WAYLAND=1
+
+# Qt5
+export XDG_SESSION_TYPE=wayland
+
+#
+# TEMPORARY:
+# 
+# Until there is proper hardware support for AMD RX 7900XTX GPUs, hardware
+# cursors must be disabled.
+#
+export WLR_NO_HARDWARE_CURSORS=1
+
+#
+# systemd logging
+#
+systemd-cat --identifier=sway sway $@
+
