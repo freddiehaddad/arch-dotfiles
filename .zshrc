@@ -7,12 +7,14 @@ bindkey -v
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/freddiehaddad/.zshrc'
 
+# pacman -S zsh-autosuggestions
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# pacman -S zsh-autosuggestions
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+export PATH="$HOME/.local/bin:$PATH"
 
 # gh repo clone chriskempson/base16-shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
@@ -46,7 +48,12 @@ export EDITOR="nvim"
 alias vim="nvim"
 
 # pacman -S lsd
-alias ls="lsd"
+if [ $DISPLAY ]; then
+	alias ls="lsd"
+else
+	alias ls="ls --color"
+fi
+
 alias ll="ls -l"
 alias lla="ll -a"
 
@@ -62,7 +69,10 @@ source "/usr/share/fzf/completion.zsh"
 source "/usr/share/fzf/key-bindings.zsh"
 
 # pacman -S starship (select ttf-iosevka-nerd)
-eval "$(starship init zsh)"
+# starship preset nerd-font-symbols > ~/.config/starship.toml
+if [ $DISPLAY ]; then
+	eval "$(starship init zsh)"
+fi
 
 # Launch Sway
 if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
