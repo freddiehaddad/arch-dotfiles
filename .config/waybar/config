@@ -23,14 +23,14 @@
     },
 
     "temperature": {
-	    "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+	    "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
 	    "format": "CPU: {temperatureC}°C",
 	    "interval": 1,
 	    "tooltip": false,
     },
 
     "clock": {
-	    "format": "{:%a %b%e %H:%M}",
+	    "format": "{:%a %b %e %H:%M}",
     },
 
     "tray": {

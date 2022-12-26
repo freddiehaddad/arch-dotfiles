@@ -1,8 +1,8 @@
 @import "scheme.css";
 
 * {
-	font-family: "Iosevka";
-	font-size: 12pt;
+	/* font-family: "Iosevka"; */
+	font-size: 10pt;
 	margin: 0;
 	padding: 0;
 }
