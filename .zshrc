@@ -7,9 +7,6 @@ bindkey -v
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/freddiehaddad/.zshrc'
 
-# pacman -S zsh-autosuggestions
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
@@ -42,6 +39,9 @@ ln -sf $HOME/.config/base16-waybar/colors/base16-$BASE16_THEME.css $HOME/.config
 
 # git clone https://git.sr.ht/~knezi/base16-wofi
 ln -sf $HOME/.config/base16-wofi/themes/base16-$BASE16_THEME.css $HOME/.config/wofi/style.css
+
+# pacman -S zsh-autosuggestions
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # pacman -S neovim
 export EDITOR="nvim"
