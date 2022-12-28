@@ -32,11 +32,17 @@ set $screenclip slurp | grim -g - $HOME/pictures/scren-$(date +"%Y-%m-%d-%H-%M-%
 exec waybar
 exec openrgb --startminimized --noautoconnect
 exec 1password --silent
-for_window [class="1Password"] floating enable
-for_window [title="Library"] floating enable
+
+###
+#
+# Programs that should not be tiled
+#
+for_window [class="^1Password"] floating enable
+for_window [title="^Library"] floating enable
+for_window [title="^OpenRGB"] floating enable
 # Steam
-for_window [title="Steam"] floating enable
-for_window [title="Friends List"] floating enable
+for_window [title="^Steam"] floating enable
+for_window [title="^Friends List"] floating enable
 
 bindsym Print exec $screenshot
 bindsym Shift+Print exec $screenclip
