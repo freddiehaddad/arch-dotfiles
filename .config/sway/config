@@ -34,6 +34,9 @@ exec waybar
 exec 1password --silent
 for_window [class="1Password"] floating enable
 for_window [title="Library"] floating enable
+# Steam
+for_window [title="Steam"] floating enable
+for_window [title="Friends List"] floating enable
 
 bindsym Print exec $screenshot
 bindsym Shift+Print exec $screenclip
