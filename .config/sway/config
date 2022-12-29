@@ -37,12 +37,12 @@ exec 1password --silent
 #
 # Programs that should not be tiled
 #
-for_window [class="^1Password"] floating enable
-for_window [title="^Library"] floating enable
-for_window [title="^OpenRGB"] floating enable
+for_window [class="1Password"] floating enable
+for_window [title="^Library$"] floating enable
+for_window [class="openrgb"] floating enable
 # Steam
-for_window [title="^Steam"] floating enable
-for_window [title="^Friends List"] floating enable
+for_window [class="Steam"] floating enable
+
 
 bindsym Print exec $screenshot
 bindsym Shift+Print exec $screenclip
