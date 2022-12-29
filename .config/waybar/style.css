@@ -1,8 +1,8 @@
 @import "scheme.css";
 
 * {
-	/* font-family: "Iosevka"; */
-	font-size: 10pt;
+	font-family: "Sans Serif";
+	font-size: 12pt;
 	margin: 0;
 	padding: 0;
 }
@@ -54,6 +54,7 @@ button:hover {
 #memory,
 #network
 {
+	font-family: "Iosevka Term";
 	padding: 0 12px 0 10px;
 	border-right: 2px solid @base01;
 }
