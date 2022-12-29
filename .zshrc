@@ -13,7 +13,7 @@ compinit
 
 export PATH="$HOME/.local/bin:$PATH"
 
-# gh repo clone chriskempson/base16-shell
+# git clone https://github.com/chriskempson/base16-shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
@@ -28,19 +28,20 @@ base16_ashes
 #base16_oceanicnext
 #base16_seti
 
-# gh repo clone tinted-theming/base16-fzf
+# git clone https://github.com/tinted-theming/base16-fzf
 source $HOME/.config/base16-fzf/bash/base16-$BASE16_THEME.config
 
-# gh repo clone rkubosz/base16-sway
+# git clone https://github.com/rkubosz/base16-sway
 ln -sf $HOME/.config/base16-sway/themes/base16-$BASE16_THEME.config $HOME/.config/sway/base16.config
 
-# gh repo clone mnussbaum/base16-waybar
+# git clone https://github.com/mnussbaum/base16-waybar
 ln -sf $HOME/.config/base16-waybar/colors/base16-$BASE16_THEME.css $HOME/.config/waybar/scheme.css
 
 # git clone https://git.sr.ht/~knezi/base16-wofi
 ln -sf $HOME/.config/base16-wofi/themes/base16-$BASE16_THEME.css $HOME/.config/wofi/style.css
 
 # pacman -S zsh-autosuggestions
+# pacman -S zsh-completions
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # pacman -S neovim
@@ -68,7 +69,8 @@ eval "$(zoxide init zsh)"
 source "/usr/share/fzf/completion.zsh"
 source "/usr/share/fzf/key-bindings.zsh"
 
-# pacman -S starship (select ttf-iosevka-nerd)
+# pacman -S starship
+# pacman -S ttf-iosevka-nerd
 # starship preset nerd-font-symbols > ~/.config/starship.toml
 if [ $DISPLAY ]; then
 	eval "$(starship init zsh)"
@@ -76,5 +78,6 @@ fi
 
 # Launch Sway
 if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
-	exec sway-run --debug
+	#exec sway-run --debug
+	exec sway-run
 fi
