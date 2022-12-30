@@ -39,9 +39,11 @@ exec 1password --silent
 #
 for_window [class="1Password"] floating enable
 for_window [title="^Library$"] floating enable
-for_window [class="openrgb"] floating enable
+for_window [app_id="openrgb"] floating enable
 # Steam
+# Steam Games
 for_window [class="Steam"] floating enable
+for_window [class="steam_app_*"] floating enable
 
 
 bindsym Print exec $screenshot
