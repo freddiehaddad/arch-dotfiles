@@ -59,8 +59,13 @@ alias ll="ls -l"
 alias lla="ll -a"
 
 # pacman -S bat
-export BAT_THEME="base16"
 alias cat="bat"
+export BAT_THEME="base16"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+alias bathelp='bat --plain --language=help'
+help() {
+	"$@" --help 2>&1 | bathelp
+}
 
 # pacman -S zoxide
 eval "$(zoxide init zsh)"
