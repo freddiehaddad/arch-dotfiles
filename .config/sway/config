@@ -17,21 +17,15 @@ set $right l
 
 set $term foot
 
+exec waybar
+
 # Application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 set $menu wofi --insensitive --show drun | xargs swaymsg exec --
 # Requires https://github.com/mortie/swaylock-effects
 set $lock "swaylock --screenshots --effect-blur 10x10 --clock --fade-in 1"
 set $screenshot grim $HOME/pictures/screenshots/scrn-$(date +"%Y-%m-%d-%H-%M-%S").png
-set $screenclip slurp | grim -g - $HOME/pictures/scren-$(date +"%Y-%m-%d-%H-%M-%S").png
-
-### Autostart section
-# 
-# Programs that should automatically start with Sway
-#
-exec waybar
-exec openrgb --startminimized --noautoconnect
-exec 1password --silent
+set $screenclip slurp | grim -g - $HOME/pictures/screenshots/scren-$(date +"%Y-%m-%d-%H-%M-%S").png
 
 ###
 #
@@ -233,3 +227,10 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 include /etc/sway/config.d/*
+
+### Autostart section
+# 
+# Programs that should automatically start with Sway
+#
+exec openrgb --startminimized
+exec 1password --silent
