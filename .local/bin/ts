@@ -1,24 +1,48 @@
 #!/bin/bash
 
-# selected project directory
+# Selected project directory
 project_directory=$(find ~/projects/git -mindepth 1 -maxdepth 1 -type d | fzf)
 if [ -z $project_directory ]; then
 	exit 1
 fi
 
-# parse session name from product directory
+# Parse session name from product directory
 project_name=$(basename $project_directory | tr . _)
 
-# if tmux is not running, we want to create a new session
-tmux_pid=$(pgrep tmux)
-if [ -z $TMUX ] && [ -z $tmux_pid ]; then
+#
+# There's several scenarios we must consider.
+#
+#   1. no instance of tmux exists
+#   2. tmux is in an attached state
+#   3. tmux is in a detached state
+#
+# Scenario 1:
+#   Create a new tmux session
+#
+# Scenario 2 and 3:
+#   First we need check if a matching session already exists.  If not, we create
+#   the session in a detached state and then switch to it.
+#
+
+# If a tmux instance doesn't exist, we need to create one.
+tmux_pid=$(pgrep tmux 2>&1 > /dev/null)
+if [ $? -ne 0 ]; then
 	tmux new-session -s $project_name -c $project_directory
 	exit 0
 fi
 
-# if we previously created a session, we want to attach to it
-if ! tmux has-session -t=$project_name 2> /dev/null; then
-	tmux new-session -ds $project_name -c $project_directory
+# Since tmux is running, create the new session in a detached state if it
+# doesn't already exist.
+has_session=$(tmux has-session -t $project_name 2>/dev/null)
+if [ $? -ne 0 ]; then
+	tmux new-session -s $project_name -c $project_directory -d
 fi
 
-tmux switch-client -t $project_name
+# A session exists at this point.  Switch to it if tmux is running.
+if [[ -n $TMUX ]]; then
+	tmux switch-client -t $project_name
+	exit 0
+fi
+
+# tmux is in a detached state, so we need to attach to it.
+tmux attach -t $project_name
