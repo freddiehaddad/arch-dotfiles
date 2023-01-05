@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# selected project directory
+project_directory=$(find ~/projects/git -mindepth 1 -maxdepth 1 -type d | fzf)
+if [ -z $project_directory ]; then
+	exit 1
+fi
+
+# parse session name from product directory
+project_name=$(basename $project_directory | tr . _)
+
+# if tmux is not running, we want to create a new session
+tmux_pid=$(pgrep tmux)
+if [ -z $TMUX ] && [ -z $tmux_pid ]; then
+	tmux new-session -s $project_name -c $project_directory
+	exit 0
+fi
+
+# if we previously created a session, we want to attach to it
+if ! tmux has-session -t=$project_name 2> /dev/null; then
+	tmux new-session -ds $project_name -c $project_directory
+fi
+
+tmux switch-client -t $project_name
