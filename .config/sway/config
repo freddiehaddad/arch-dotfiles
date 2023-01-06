@@ -25,7 +25,7 @@ set $menu wofi --insensitive --show drun | xargs swaymsg exec --
 # Requires https://github.com/mortie/swaylock-effects
 set $lock "swaylock --screenshots --effect-blur 10x10 --clock --fade-in 1"
 set $screenshot grim $HOME/pictures/screenshots/scrn-$(date +"%Y-%m-%d-%H-%M-%S").png
-set $screenclip slurp | grim -g - $HOME/pictures/screenshots/scren-$(date +"%Y-%m-%d-%H-%M-%S").png
+set $screenclip slurp | grim -g - $HOME/pictures/screenshots/scrn-$(date +"%Y-%m-%d-%H-%M-%S").png
 
 ###
 #
